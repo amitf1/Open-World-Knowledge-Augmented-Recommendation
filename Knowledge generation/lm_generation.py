@@ -68,9 +68,9 @@ def main():
     # Load MovieLens-1M dataset
     users, items, ratings = load_movielens_1m()
 
-    # Example prompt templates
-    user_prompt_template = "Generate knowledge for the following user data: {input_data}, with ratings: {ratings}"
-    item_prompt_template = "Generate knowledge for the following item data: {input_data}"
+    # todo: rewrite as in the paper
+    user_prompt_template = "Given a user: {input_data}, with ratings: {ratings}, generate a knowledge about the user."
+    item_prompt_template = "Introduce a movie: {input_data}"
 
     # Create dictionaries for users and items
     user_knowledge_dict = {}
